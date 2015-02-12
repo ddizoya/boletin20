@@ -5,7 +5,9 @@
         - Dar de alta un alumno.
         - Dar de baja un alumno.
         - Localizar un alumno.
-        - 
+        - Visualizar alumno.
+  Debemos tener en cuenta que cada alumno que matriculemos debe llevar el número de registro
+  siguiente al último. Este curso comienza con 5500.
  */
 package boletin20;
 
