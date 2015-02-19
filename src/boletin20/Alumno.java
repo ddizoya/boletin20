@@ -30,7 +30,7 @@ public class Alumno {
     public Alumno(String nombre, float nota, int matricula) {
         this.nombre = nombre;
         this.nota = nota;
-        this.matricula = matricula;
+        
     }
 
     public String getNombre() {
@@ -48,12 +48,6 @@ public class Alumno {
     public void setNota(float nota) {
         this.nota = nota;
     }
-      public int getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
-    }
+ 
 }
 
