@@ -15,14 +15,14 @@ import javax.swing.JOptionPane;
  *
  * @author ddizoya
  */
-public class Colegio extends Alumno {
+public class Colegio  {
 
     public Map<String, Alumno> listadealumnos = new TreeMap<>();
     public Iterator it = listadealumnos.keySet().iterator();
 
     public void visualizarAlumno(Map<Integer, Alumno> listadealumnos) {
         while (it.hasNext()) {
-            Integer clave = it.hashCode();
+            String clave = (String)it.next();
             String nombre = listadealumnos.get(clave).getNombre();
             float nota = listadealumnos.get(clave).getNota();
             JOptionPane.showMessageDialog(null, "Nota: " +nota  + "Nombre del alumno: " + nombre);
@@ -32,17 +32,14 @@ public class Colegio extends Alumno {
     public void anhadirAlumno() throws NumberFormatException, HeadlessException {
         Alumno al;
         int cont = 5500;
-        while (it.hasNext()){
-            al = new Alumno();
-            
-        }
-        
-        int klave = Integer.parseInt(clave);
+        //Esto está fatal.
         String nombre = JOptionPane.showInputDialog(null, "Introduce su nombre.");
         float nota = Float.parseFloat(JOptionPane.showInputDialog("Introduce su nota."));
-        String matricula = Integer.toString(klave);
-        al = new Alumno(nombre, nota, matricula);
-        listadealumnos.put(klave, al);
+        al = new Alumno(nombre, nota);
+        String aux = String.t
+        listadealumnos.put((String)cont, al);
+        cont++;
+        
         System.out.println("Elemento agregado.");
     }
 
